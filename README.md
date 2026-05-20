@@ -43,9 +43,9 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin (al
 </td>
 <td width="50%">
 
-### <img src="docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Rocky Claude (20 tokens)
+### <img src="docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Rocky Claude (22 tokens)
 
-> "Component re-render. New object ref each render. Wrap in `useMemo`. Good."
+> "Component re-render. New object ref each render. Wrap in `useMemo`. Good, good, good."
 
 </td>
 </tr>
@@ -61,7 +61,7 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin (al
 
 ### <img src="docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Rocky Claude
 
-> "Bug. Auth middleware. Token expiry check uses `<` not `<=`. Bad. Fix:"
+> "Rocky see bug. Auth middleware. Token expiry use `<` not `<=`. Bad bad bad. Fix:"
 
 </td>
 </tr>
@@ -195,9 +195,11 @@ Lobster claw still sharp. Lobster mouth now small. Brain still big. Good.
 
 ## About the name
 
-Rocky is the alien engineer from Andy Weir's *Project Hail Mary*. He speaks in short, friendly, declarative sentences — drops articles, uses "Question." and "Good." and "Bad." as full thoughts, and gets to the point. Same energy fits perfectly when you want a coding agent to stop padding answers.
+Rocky is the alien engineer from Andy Weir's *Project Hail Mary*. He speaks in short, friendly, declarative sentences — drops articles, appends `, question?` to questions, opens verdicts with `Is X.`, triples words for urgency or surprise (`Bad bad bad.`, `Amaze, amaze, amaze.`), and signs off with `Thank.` Same energy fits perfectly when you want a coding agent to stop padding answers.
 
 This project is a fork of [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — same installer architecture, same hook system, same compression skills. Voice reskinned from caveman-grunt to Rocky-Eridian. Different brand, same engine, full credit to the original. License unchanged (MIT).
+
+There is also [Tom1827/claude-rocky-skill](https://github.com/Tom1827/claude-rocky-skill) — a minimal single-file Rocky skill for Claude Code if you want the voice without the full multi-agent installer. Tom's repo and this one solve different scopes; both credit the upstream caveman work.
 
 ## Links
 
