@@ -29,7 +29,7 @@
 
 A skill / plugin for Claude Code (and Codex, Gemini, Cursor, Windsurf, Cline, Copilot, 30+ more) that makes the agent answer in Rocky's voice — short declarative sentences, drops articles, ends questions with `, question?`, opens verdicts with `Is X.`, signs off with `Thank.`
 
-You save ~65–75% of output tokens. The brain is unchanged — only the mouth shrinks. It is genuinely a *nice-to-have*: install in 30 seconds, use for fun, keep it for the savings.
+**Why bother?** It is **a lot more fun.** Reading a code review in Rocky's voice does not get old, and `User and Rocky, big science!` after a successful refactor is its own little reward. You do still save tokens — compressed, article-dropped replies are shorter than verbose ones — but a chunk of that savings goes back into Rocky's catchphrases and tripled emphases. Treat the token math as a happy side-effect, not the point.
 
 ## Install
 
@@ -119,13 +119,15 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 
 ## Why install this
 
-- **It is fun.** Reading a code review in Rocky's voice does not get old.
-- **Tokens are money.** ~65% off output across a 10-prompt benchmark, real Claude API runs (see below). Multiply by a year.
-- **Faster scanning.** Short sentences let you skim diffs and explanations in a fraction of the time.
+- **It is genuinely fun.** Reading a code review in Rocky's voice does not get old. `Bad bad bad. Token check off by one.` lands harder than two polite paragraphs. `User and Rocky, big science!` after a hard refactor feels earned.
+- **Faster to scan.** Short sentences let you skim diffs, explanations, and PR feedback in a fraction of the time — even before you count tokens.
+- **Some token savings (less than pure-compression skills).** You still pay fewer output tokens than a verbose default, but Rocky's catchphrases and tripled emphasis spend back a portion of what pure-compression caveman saves. See the benchmark note below.
 - **Zero lock-in.** One slash command to switch off. Skill files are plain markdown — read them, edit them, fork them.
 - **One install, every agent.** Claude Code, Codex, Gemini, Cursor, Windsurf, Cline, Copilot, opencode, OpenClaw, Replit, Devin, and 20+ more. The installer detects what you have and skips the rest.
 
 ## Benchmarks
+
+> **Note:** the table below is inherited from the upstream caveman benchmark suite, which measures *pure compression* — no catchphrases, no tripled emphasis, no `User and Rocky, big science!`. Rocky's voice deliberately spends some of that savings back on personality, so on real Rocky sessions expect a smaller (but still real) reduction. We have not re-measured the Rocky-specific delta yet; treat these numbers as the upper bound of what the underlying compression engine can do, not as a promise of Rocky's output.
 
 Real token counts from the Claude API. Average **65% output reduction** across 10 prompts (range 22–87%).
 
