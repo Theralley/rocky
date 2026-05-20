@@ -1,0 +1,16 @@
+benchmarks/results/*.json
+__pycache__/
+*.pyc
+.venv/
+.env.local
+rocky-compress.md
+**/.DS_Store
+.claude/worktrees/
+evals/snapshots/*.html
+evals/snapshots/*.png
+context/refs/research-brief-rocky-code-efficiency.md
+
+# Build artifacts
+dist/*
+!dist/rocky.skill
+.DS_Store

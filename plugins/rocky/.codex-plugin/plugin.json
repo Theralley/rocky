@@ -1,0 +1,39 @@
+{
+  "name": "rocky",
+  "version": "0.1.0",
+  "description": "Ultra-compressed communication mode. Cut filler. Keep technical accuracy.",
+  "author": {
+    "name": "Julius Brussee",
+    "url": "https://github.com/JuliusBrussee"
+  },
+  "homepage": "https://github.com/Theralley/rocky",
+  "repository": "https://github.com/Theralley/rocky",
+  "license": "MIT",
+  "keywords": [
+    "productivity",
+    "communication",
+    "brevity",
+    "writing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Rocky",
+    "shortDescription": "Talk like rocky. Cut filler. Keep technical accuracy.",
+    "longDescription": "Ultra-compressed communication mode for Codex. Use fewer words. Keep exact technical substance.",
+    "developerName": "Julius Brussee",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Theralley/rocky",
+    "privacyPolicyURL": "https://github.com/Theralley/rocky/blob/main/README.md",
+    "termsOfServiceURL": "https://github.com/Theralley/rocky/blob/main/LICENSE",
+    "defaultPrompt": [
+      "Use rocky mode. Cut filler. Keep technical accuracy."
+    ],
+    "composerIcon": "./assets/rocky-small.svg",
+    "logo": "./assets/rocky.svg",
+    "screenshots": [],
+    "brandColor": "#6B7280"
+  }
+}

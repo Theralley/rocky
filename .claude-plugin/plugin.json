@@ -1,0 +1,34 @@
+{
+  "name": "rocky",
+  "description": "Ultra-compressed communication mode. Cuts ~75% of tokens while keeping full technical accuracy by speaking like Rocky the Eridian from Project Hail Mary.",
+  "author": {
+    "name": "Theralley",
+    "url": "https://github.com/Theralley"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/src/hooks/rocky-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading rocky mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/src/hooks/rocky-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking rocky mode..."
+          }
+        ]
+      }
+    ]
+  }
+}

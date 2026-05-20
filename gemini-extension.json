@@ -1,0 +1,6 @@
+{
+  "name": "rocky",
+  "description": "Ultra-compressed communication mode. Cuts ~75% of tokens while keeping full technical accuracy by speaking like Rocky the Eridian from Project Hail Mary.",
+  "version": "1.0.1",
+  "contextFileName": "GEMINI.md"
+}

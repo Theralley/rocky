@@ -1,0 +1,35 @@
+{
+  "name": "rocky-installer",
+  "version": "0.1.0",
+  "description": "Rocky installer — detects your AI coding agents and installs Rocky (Eridian-style compressed communication) for each one. Fork of caveman by Julius Brussee.",
+  "license": "MIT",
+  "author": "Theralley",
+  "homepage": "https://github.com/Theralley/rocky",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theralley/rocky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Theralley/rocky/issues"
+  },
+  "bin": {
+    "rocky": "./bin/install.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test tests/installer/*.test.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "agents/",
+    "skills/",
+    "plugins/",
+    "commands/",
+    "dist/rocky.skill",
+    "README.md",
+    "LICENSE"
+  ]
+}
