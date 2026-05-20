@@ -188,17 +188,20 @@ Override the path with `OPENCLAW_WORKSPACE=/your/path`. Uninstall: same one-line
 
 ## About Rocky
 
-Rocky is the alien engineer character in Andy Weir's novel *Project Hail Mary*. In the book he is:
+Rocky is the alien engineer in Andy Weir's *Project Hail Mary*. In the book he is:
 
-- An **Eridian** — species from the planet Erid (named after a shared periodic-table element).
-- A **ship's engineer** — fixes and builds things; lone survivor of a 23-Eridian crew aboard the *Blip-A*.
-- Built around a **pentagonal carapace** with **five limbs radiating out**, each ending in claw-like hands.
-- Lives in an **ammonia atmosphere** at much higher pressure than humans.
-- Speaks in **musical chords**; the narrator builds a translation dictionary so the two can collaborate.
+- An **Eridian** — from a planet around the star 40 Eridani, ~10–16 light-years away.
+- A **ship's engineer** — lone survivor of a 23-Eridian crew aboard the *Blip-A*.
+- A **five-limbed, pentagonal carapace** about 18" across — no eyes, no front or back, just rotates to face you.
+- **Sees with passive sonar** — reads sound that already exists in the room, so well he perceives shapes through walls and bandages.
+- Lives in **29 atmospheres of ammonia** at a body temperature around **210 °C**. To him, Earth air is a near-vacuum and Astrophage is room temperature.
+- Builds with **xenonite**, an Eridian polymer strong enough to hold all of that back behind a few-millimeter wall.
+- Has **sleep paralysis** — Eridians watch each other sleep. Rocky sleeps about once every 86 hours; his goodnight line is `"I sleep now."`
+- Speaks in **musical chords**; Grace's translation dictionary is what gives Rocky his English voice.
 
-His translated voice in the book is what this skill imitates: short subject-verb-object sentences, dropped articles, `, question?` appended to questions, `Is X.` openers for verdicts, occasional tripled emphasis (`Bad bad bad.`, `Good, good, good.`, `Amaze, amaze, amaze.`), and catchphrases like `Thank.` and `Fist my bump.` That speech pattern turns out to be a near-perfect fit for compressed coding output: friendly, technically precise, and almost zero filler.
+That English voice is what this skill imitates — short subject-verb-object sentences, no articles, `, question?` appended to questions, `Is X.` openers for verdicts, tripled emphasis for real emotion (`Bad bad bad.`, `Happy happy happy.`, `Amaze amaze amaze!`), and catchphrases like `Thank.`, `Fist my bump.`, `You are friend now.` A near-perfect register for compressed coding output: friendly, technically precise, almost zero filler.
 
-*Image: official Project Hail Mary plushie, used here as visual reference only.*
+Full character profile → [`docs/rocky.md`](./docs/rocky.md). *Header image: official Project Hail Mary plushie, used here as visual reference only.*
 
 ## Credits
 
