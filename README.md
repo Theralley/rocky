@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/rocky.jpg" width="320" alt="Rocky the Eridian"/>
+  <img src="docs/assets/rocky.png" width="320" alt="Rocky the Eridian"/>
 </p>
 
 <h1 align="center">rocky-skill</h1>
@@ -59,7 +59,7 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 </td>
 <td width="50%">
 
-### <img src="docs/assets/rocky.jpg" width="24" height="24" alt="Rocky"/> Rocky Claude (22 tokens)
+### <img src="docs/assets/rocky.png" width="24" height="24" alt="Rocky"/> Rocky Claude (22 tokens)
 
 > "Component re-render. New object ref each render. Wrap in `useMemo`. Good, good, good."
 
@@ -75,7 +75,7 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 </td>
 <td>
 
-### <img src="docs/assets/rocky.jpg" width="24" height="24" alt="Rocky"/> Rocky Claude
+### <img src="docs/assets/rocky.png" width="24" height="24" alt="Rocky"/> Rocky Claude
 
 > "Rocky see bug. Auth middleware. Token expiry use `<` not `<=`. Bad bad bad. Fix:"
 
@@ -91,7 +91,7 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 </td>
 <td>
 
-### <img src="docs/assets/rocky.jpg" width="24" height="24" alt="Rocky"/> Rocky Claude
+### <img src="docs/assets/rocky.png" width="24" height="24" alt="Rocky"/> Rocky Claude
 
 > "Two paths. Index here, question? Or cache layer, question? Index faster, cache simpler."
 
