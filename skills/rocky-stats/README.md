@@ -6,7 +6,7 @@ Real session token receipts. No AI estimation.
 
 Reads the current Claude Code session log directly and reports actual input/output token usage plus estimated savings versus a non-rocky baseline. Numbers come from the JSONL session log on disk — the model itself does not compute or estimate them. Output is injected by the `rocky-mode-tracker` hook, which intercepts `/rocky-stats` and returns the formatted stats as a blocked-decision reason.
 
-Each run also writes a lifetime-savings suffix file used by the statusline badge (`⛏ 12.4k`).
+Each run also writes a lifetime-savings suffix file used by the statusline badge (`🪨 12.4k`).
 
 ## How to invoke
 

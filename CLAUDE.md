@@ -191,7 +191,7 @@ Reads flag file at `$CLAUDE_CONFIG_DIR/.rocky-active`. Outputs colored badge str
 - `full` or empty → `[ROCKY]` (orange)
 - anything else → `[ROCKY:<MODE_UPPERCASED>]` (orange)
 
-Then appends the lifetime-savings suffix (`⛏ 12.4k`) read from `$CLAUDE_CONFIG_DIR/.rocky-statusline-suffix` — written by `rocky-stats.js` on every `/rocky-stats` run. **Default on**; users opt out with `ROCKY_STATUSLINE_SAVINGS=0`. The suffix file is absent until `/rocky-stats` runs at least once, so fresh installs render no fake number.
+Then appends the lifetime-savings suffix (`🪨 12.4k`) read from `$CLAUDE_CONFIG_DIR/.rocky-statusline-suffix` — written by `rocky-stats.js` on every `/rocky-stats` run. **Default on**; users opt out with `ROCKY_STATUSLINE_SAVINGS=0`. The suffix file is absent until `/rocky-stats` runs at least once, so fresh installs render no fake number.
 
 Configured in `settings.json` under `statusLine.command`. PowerShell counterpart at `src/hooks/rocky-statusline.ps1` for Windows. Both scripts symlink-refuse and whitelist-validate the flag/suffix file contents — never echo arbitrary bytes.
 

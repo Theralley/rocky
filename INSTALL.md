@@ -157,7 +157,7 @@ cat "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/.rocky-active"
 
 If it's missing or empty, the SessionStart hook didn't fire. See troubleshooting below.
 
-Statusline should show `[ROCKY]` (orange) at the bottom of Claude Code. After your first `/rocky-stats` run it appends a savings counter like `[ROCKY] ⛏ 12.4k`.
+Statusline should show `[ROCKY]` (orange) at the bottom of Claude Code. After your first `/rocky-stats` run it appends a savings counter like `[ROCKY] 🪨 12.4k`.
 
 ## Uninstall
 

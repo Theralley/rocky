@@ -24,7 +24,7 @@ If you installed rocky standalone (without the plugin), the unified Node install
 
 - Reads `$CLAUDE_CONFIG_DIR/.rocky-active` (default `~/.claude/.rocky-active`) and outputs a colored badge
 - Shows `[ROCKY]`, `[ROCKY:ULTRA]`, `[ROCKY:WENYAN]`, etc.
-- Appends the lifetime savings suffix `⛏ 12.4k` from `$CLAUDE_CONFIG_DIR/.rocky-statusline-suffix` (written by `rocky-stats.js` on each `/rocky-stats` run; absent until the first run, so fresh installs render no fake number). Opt out with `ROCKY_STATUSLINE_SAVINGS=0`.
+- Appends the lifetime savings suffix `🪨 12.4k` from `$CLAUDE_CONFIG_DIR/.rocky-statusline-suffix` (written by `rocky-stats.js` on each `/rocky-stats` run; absent until the first run, so fresh installs render no fake number). Opt out with `ROCKY_STATUSLINE_SAVINGS=0`.
 
 ## Statusline Badge
 

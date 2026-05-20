@@ -342,9 +342,9 @@ test('writes statusline suffix file after a stats run', (tmp) => {
   });
   const suffixPath = path.join(claudeDir, '.rocky-statusline-suffix');
   assert.ok(fs.existsSync(suffixPath));
-  // 1500 / 0.35 = 4286, saved = 2786 → "⛏ 2.8k"
+  // 1500 / 0.35 = 4286, saved = 2786 → "🪨 2.8k"
   const suffix = fs.readFileSync(suffixPath, 'utf8');
-  assert.match(suffix, /^⛏ 2\.8k$/);
+  assert.match(suffix, /^🪨 2\.8k$/);
 });
 
 test('humanizeTokens formats small/medium/large correctly', () => {
@@ -360,13 +360,13 @@ test('statusline.sh appends savings when ROCKY_STATUSLINE_SAVINGS=1', (tmp) => {
   const claudeDir = path.join(tmp, '.claude');
   fs.mkdirSync(claudeDir, { recursive: true });
   fs.writeFileSync(path.join(claudeDir, '.rocky-active'), 'full');
-  fs.writeFileSync(path.join(claudeDir, '.rocky-statusline-suffix'), '⛏ 2.8k');
+  fs.writeFileSync(path.join(claudeDir, '.rocky-statusline-suffix'), '🪨 2.8k');
   const out = execFileSync('bash', [path.join(ROOT, 'src', 'hooks', 'rocky-statusline.sh')], {
     encoding: 'utf8',
     env: { ...process.env, CLAUDE_CONFIG_DIR: claudeDir, ROCKY_STATUSLINE_SAVINGS: '1' },
   });
   assert.match(out, /\[ROCKY\]/);
-  assert.match(out, /⛏ 2\.8k/);
+  assert.match(out, /🪨 2\.8k/);
 });
 
 test('statusline.sh renders savings by default when env var is unset', (tmp) => {
@@ -374,14 +374,14 @@ test('statusline.sh renders savings by default when env var is unset', (tmp) => 
   const claudeDir = path.join(tmp, '.claude');
   fs.mkdirSync(claudeDir, { recursive: true });
   fs.writeFileSync(path.join(claudeDir, '.rocky-active'), 'full');
-  fs.writeFileSync(path.join(claudeDir, '.rocky-statusline-suffix'), '⛏ 2.8k');
+  fs.writeFileSync(path.join(claudeDir, '.rocky-statusline-suffix'), '🪨 2.8k');
   const env = { ...process.env, CLAUDE_CONFIG_DIR: claudeDir };
   delete env.ROCKY_STATUSLINE_SAVINGS;
   const out = execFileSync('bash', [path.join(ROOT, 'src', 'hooks', 'rocky-statusline.sh')], {
     encoding: 'utf8', env,
   });
   assert.match(out, /\[ROCKY\]/);
-  assert.match(out, /⛏ 2\.8k/);
+  assert.match(out, /🪨 2\.8k/);
 });
 
 test('statusline.sh omits savings when ROCKY_STATUSLINE_SAVINGS=0', (tmp) => {
@@ -389,13 +389,13 @@ test('statusline.sh omits savings when ROCKY_STATUSLINE_SAVINGS=0', (tmp) => {
   const claudeDir = path.join(tmp, '.claude');
   fs.mkdirSync(claudeDir, { recursive: true });
   fs.writeFileSync(path.join(claudeDir, '.rocky-active'), 'full');
-  fs.writeFileSync(path.join(claudeDir, '.rocky-statusline-suffix'), '⛏ 2.8k');
+  fs.writeFileSync(path.join(claudeDir, '.rocky-statusline-suffix'), '🪨 2.8k');
   const out = execFileSync('bash', [path.join(ROOT, 'src', 'hooks', 'rocky-statusline.sh')], {
     encoding: 'utf8',
     env: { ...process.env, CLAUDE_CONFIG_DIR: claudeDir, ROCKY_STATUSLINE_SAVINGS: '0' },
   });
   assert.match(out, /\[ROCKY\]/);
-  assert.doesNotMatch(out, /⛏/);
+  assert.doesNotMatch(out, /🪨/);
 });
 
 test('statusline.sh omits savings when suffix file is missing (fresh install)', (tmp) => {
@@ -411,7 +411,7 @@ test('statusline.sh omits savings when suffix file is missing (fresh install)', 
     encoding: 'utf8', env,
   });
   assert.match(out, /\[ROCKY\]/);
-  assert.doesNotMatch(out, /⛏/);
+  assert.doesNotMatch(out, /🪨/);
 });
 
 test('statusline.sh strips control bytes from suffix', (tmp) => {

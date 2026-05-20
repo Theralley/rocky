@@ -324,7 +324,7 @@ function main() {
     // Routed through safeWriteFlag — the suffix path is predictable and
     // user-owned, same symlink-clobber surface as the .rocky-active flag.
     const agg = aggregateHistory(historyPath, null);
-    const suffix = agg.estSavedTokens > 0 ? `⛏ ${humanizeTokens(agg.estSavedTokens)}` : '';
+    const suffix = agg.estSavedTokens > 0 ? `🪨 ${humanizeTokens(agg.estSavedTokens)}` : '';
     safeWriteFlag(path.join(claudeDir, '.rocky-statusline-suffix'), suffix);
   }
 
