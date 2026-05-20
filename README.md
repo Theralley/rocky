@@ -1,4 +1,8 @@
 <p align="center">
+  <strong>Beta — for now. Good, good, good.</strong>
+</p>
+
+<p align="center">
   <img src="docs/assets/rocky.png" width="320" alt="Rocky the Eridian"/>
 </p>
 
