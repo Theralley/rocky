@@ -157,7 +157,7 @@ Rocky cut that by ~46% on average. Same instructions. Same accuracy. Less waste.
 
 ## Part of Rocky
 
-This skill is part of the [rocky](https://github.com/Theralley/rocky) toolkit — making Claude use fewer tokens without losing accuracy.
+This skill is part of the [rocky](https://github.com/Theralley/rocky-skill) toolkit — making Claude use fewer tokens without losing accuracy.
 
 - **rocky** — make Claude *speak* like rocky (cuts response tokens ~65%)
 - **rocky-compress** — make Claude *read* less (cuts context tokens ~46%)

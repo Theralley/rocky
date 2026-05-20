@@ -4,7 +4,7 @@
 //
 // Usage:
 //   node src/tools/rocky-init.js [target-dir] [--dry-run] [--force] [--only <agent>]
-//   curl -fsSL https://raw.githubusercontent.com/Theralley/rocky/main/src/tools/rocky-init.js | node - [args]
+//   curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/src/tools/rocky-init.js | node - [args]
 //
 // Without args, runs in cwd. Generates the rule files for Cursor, Windsurf,
 // Cline, Copilot, and AGENTS.md. Does NOT modify CLAUDE.md or compress
@@ -123,7 +123,7 @@ function processOpenclaw(opts) {
     return {
       status: 'unsupported-standalone',
       label: 'x',
-      detail: '~/.openclaw/workspace (helper unavailable in standalone curl|node mode — use `npx -y github:Theralley/rocky -- --only openclaw`)',
+      detail: '~/.openclaw/workspace (helper unavailable in standalone curl|node mode — use `npx -y github:Theralley/rocky-skill -- --only openclaw`)',
     };
   }
   const repoRoot = path.resolve(__dirname, '..', '..');

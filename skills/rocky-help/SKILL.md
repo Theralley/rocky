@@ -64,4 +64,4 @@ Resolution: env var > config file > `full`.
 
 ## More
 
-Full docs: https://github.com/Theralley/rocky
+Full docs: https://github.com/Theralley/rocky-skill

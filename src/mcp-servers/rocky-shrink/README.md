@@ -51,7 +51,7 @@ By design, v1 is conservative:
 
 ## Status
 
-Pre-1.0 — the compression rules and field set may change. The plugin is part of the [rocky ecosystem](https://github.com/Theralley/rocky); see the parent repo for the full skill suite (`rocky`, `cavemem`, `cavekit`, `rockycrew`, `rocky-stats`, `rocky-init`).
+Pre-1.0 — the compression rules and field set may change. The plugin is part of the [rocky ecosystem](https://github.com/Theralley/rocky-skill); see the parent repo for the full skill suite (`rocky`, `cavemem`, `cavekit`, `rockycrew`, `rocky-stats`, `rocky-init`).
 
 ## License
 

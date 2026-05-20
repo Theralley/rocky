@@ -165,7 +165,7 @@ function installOpenclaw({ workspace, repoRoot, dryRun = false, force = false, l
   const skillBody = loadSkillBody(repoRoot);
   if (!skillBody) {
     log.warn('  openclaw install requires the rocky repo on disk (skills/rocky/SKILL.md missing).');
-    log.note('  Re-run from a clone or via `npx -y github:Theralley/rocky -- --only openclaw`.');
+    log.note('  Re-run from a clone or via `npx -y github:Theralley/rocky-skill -- --only openclaw`.');
     return { ok: false, reason: 'repo not available' };
   }
   const snippet = loadBootstrapSnippet(repoRoot);

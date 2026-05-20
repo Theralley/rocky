@@ -9,13 +9,13 @@ If just want it to work, run the one-liner. If want to know what gets touched, s
 **macOS / Linux / WSL / Git Bash**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Theralley/rocky/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.sh | bash
 ```
 
 **Windows (PowerShell 5.1+)**
 
 ```powershell
-irm https://raw.githubusercontent.com/Theralley/rocky/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.ps1 | iex
 ```
 
 What it does:
@@ -28,7 +28,7 @@ What it does:
 Want to preview before installing? Use `--dry-run`:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Theralley/rocky/main/install.sh | bash -s -- --dry-run
+curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.sh | bash -s -- --dry-run
 ```
 
 ## Per-agent install
@@ -37,40 +37,40 @@ If you want to install for one agent (or want to know exactly what command runs 
 
 | Agent | Install command | Auto-activates? |
 |---|---|:-:|
-| **Claude Code** | `claude plugin marketplace add Theralley/rocky && claude plugin install rocky@rocky` | Yes |
-| **Gemini CLI** | `gemini extensions install https://github.com/Theralley/rocky` | Yes |
-| **opencode** | `node bin/install.js --only opencode` *(or `npx -y github:Theralley/rocky -- --only opencode`)* | Yes (plugin + AGENTS.md) |
-| **OpenClaw** | `npx -y github:Theralley/rocky -- --only openclaw` | Yes (workspace skill + SOUL.md) |
-| **Codex CLI** | `npx skills add Theralley/rocky -a codex` | Per-session: `/rocky` |
-| **Cursor** | `npx skills add Theralley/rocky -a cursor` | Per-session by default; `--with-init` for an always-on rule file |
-| **Windsurf** | `npx skills add Theralley/rocky -a windsurf` | Per-session by default; `--with-init` for an always-on rule file |
-| **Cline** | `npx skills add Theralley/rocky -a cline` | Per-session by default; `--with-init` for an always-on rule file |
-| **GitHub Copilot** *(soft probe)* | `npx -y github:Theralley/rocky -- --only copilot --with-init` | Repo-wide instructions via `--with-init` |
-| **Continue** | `npx skills add Theralley/rocky -a continue` | No — say `/rocky` |
-| **Kilo Code** | `npx skills add Theralley/rocky -a kilo` | No |
-| **Roo Code** | `npx skills add Theralley/rocky -a roo` | No |
-| **Augment Code** | `npx skills add Theralley/rocky -a augment` | No |
-| **Aider Desk** | `npx skills add Theralley/rocky -a aider-desk` | No |
-| **Sourcegraph Amp** | `npx skills add Theralley/rocky -a amp` | No |
-| **IBM Bob** | `npx skills add Theralley/rocky -a bob` | No |
-| **Crush** | `npx skills add Theralley/rocky -a crush` | No |
-| **Devin (terminal)** | `npx skills add Theralley/rocky -a devin` | No |
-| **Droid (Factory)** | `npx skills add Theralley/rocky -a droid` | No |
-| **ForgeCode** | `npx skills add Theralley/rocky -a forgecode` | No |
-| **Block Goose** | `npx skills add Theralley/rocky -a goose` | No |
-| **iFlow CLI** | `npx skills add Theralley/rocky -a iflow-cli` | No |
-| **Kiro CLI** | `npx skills add Theralley/rocky -a kiro-cli` | No |
-| **Mistral Vibe** | `npx skills add Theralley/rocky -a mistral-vibe` | No |
-| **OpenHands** | `npx skills add Theralley/rocky -a openhands` | No |
-| **Qwen Code** | `npx skills add Theralley/rocky -a qwen-code` | No |
-| **Atlassian Rovo Dev** | `npx skills add Theralley/rocky -a rovodev` | No |
-| **Tabnine CLI** | `npx skills add Theralley/rocky -a tabnine-cli` | No |
-| **Trae** | `npx skills add Theralley/rocky -a trae` | No |
-| **Warp** | `npx skills add Theralley/rocky -a warp` | No |
-| **Replit Agent** | `npx skills add Theralley/rocky -a replit` | No |
-| **JetBrains Junie** *(soft probe)* | `npx skills add Theralley/rocky -a junie` | No |
-| **Qoder** *(soft probe)* | `npx skills add Theralley/rocky -a qoder` | No |
-| **Google Antigravity** *(soft probe)* | `npx skills add Theralley/rocky -a antigravity` | No |
+| **Claude Code** | `claude plugin marketplace add Theralley/rocky-skill && claude plugin install rocky@rocky` | Yes |
+| **Gemini CLI** | `gemini extensions install https://github.com/Theralley/rocky-skill` | Yes |
+| **opencode** | `node bin/install.js --only opencode` *(or `npx -y github:Theralley/rocky-skill -- --only opencode`)* | Yes (plugin + AGENTS.md) |
+| **OpenClaw** | `npx -y github:Theralley/rocky-skill -- --only openclaw` | Yes (workspace skill + SOUL.md) |
+| **Codex CLI** | `npx skills add Theralley/rocky-skill -a codex` | Per-session: `/rocky` |
+| **Cursor** | `npx skills add Theralley/rocky-skill -a cursor` | Per-session by default; `--with-init` for an always-on rule file |
+| **Windsurf** | `npx skills add Theralley/rocky-skill -a windsurf` | Per-session by default; `--with-init` for an always-on rule file |
+| **Cline** | `npx skills add Theralley/rocky-skill -a cline` | Per-session by default; `--with-init` for an always-on rule file |
+| **GitHub Copilot** *(soft probe)* | `npx -y github:Theralley/rocky-skill -- --only copilot --with-init` | Repo-wide instructions via `--with-init` |
+| **Continue** | `npx skills add Theralley/rocky-skill -a continue` | No — say `/rocky` |
+| **Kilo Code** | `npx skills add Theralley/rocky-skill -a kilo` | No |
+| **Roo Code** | `npx skills add Theralley/rocky-skill -a roo` | No |
+| **Augment Code** | `npx skills add Theralley/rocky-skill -a augment` | No |
+| **Aider Desk** | `npx skills add Theralley/rocky-skill -a aider-desk` | No |
+| **Sourcegraph Amp** | `npx skills add Theralley/rocky-skill -a amp` | No |
+| **IBM Bob** | `npx skills add Theralley/rocky-skill -a bob` | No |
+| **Crush** | `npx skills add Theralley/rocky-skill -a crush` | No |
+| **Devin (terminal)** | `npx skills add Theralley/rocky-skill -a devin` | No |
+| **Droid (Factory)** | `npx skills add Theralley/rocky-skill -a droid` | No |
+| **ForgeCode** | `npx skills add Theralley/rocky-skill -a forgecode` | No |
+| **Block Goose** | `npx skills add Theralley/rocky-skill -a goose` | No |
+| **iFlow CLI** | `npx skills add Theralley/rocky-skill -a iflow-cli` | No |
+| **Kiro CLI** | `npx skills add Theralley/rocky-skill -a kiro-cli` | No |
+| **Mistral Vibe** | `npx skills add Theralley/rocky-skill -a mistral-vibe` | No |
+| **OpenHands** | `npx skills add Theralley/rocky-skill -a openhands` | No |
+| **Qwen Code** | `npx skills add Theralley/rocky-skill -a qwen-code` | No |
+| **Atlassian Rovo Dev** | `npx skills add Theralley/rocky-skill -a rovodev` | No |
+| **Tabnine CLI** | `npx skills add Theralley/rocky-skill -a tabnine-cli` | No |
+| **Trae** | `npx skills add Theralley/rocky-skill -a trae` | No |
+| **Warp** | `npx skills add Theralley/rocky-skill -a warp` | No |
+| **Replit Agent** | `npx skills add Theralley/rocky-skill -a replit` | No |
+| **JetBrains Junie** *(soft probe)* | `npx skills add Theralley/rocky-skill -a junie` | No |
+| **Qoder** *(soft probe)* | `npx skills add Theralley/rocky-skill -a qoder` | No |
+| **Google Antigravity** *(soft probe)* | `npx skills add Theralley/rocky-skill -a antigravity` | No |
 
 "Soft probe" = installer won't auto-detect these without `--only <id>` because there's no reliable always-on signal (Copilot subscription state is auth-gated; the others have no CLI / config-dir-only). Pass the flag when you want them.
 
@@ -84,7 +84,7 @@ If you'd rather see exactly what runs:
 
 ```bash
 # Clone the repo
-git clone https://github.com/Theralley/rocky.git
+git clone https://github.com/Theralley/rocky-skill.git
 cd rocky
 
 # Preview every command the installer would run
@@ -126,7 +126,7 @@ For agents without a hook system (Cursor, Windsurf, Cline, Copilot, and friends)
 node bin/install.js --with-init
 
 # Or pull the rule body straight in (manual)
-curl -fsSL https://raw.githubusercontent.com/Theralley/rocky/main/src/rules/rocky-activate.md \
+curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/src/rules/rocky-activate.md \
   > .cursor/rules/rocky.mdc   # or .windsurf/rules/rocky.md, .clinerules/rocky.md, .github/copilot-instructions.md
 ```
 
@@ -162,7 +162,7 @@ Statusline should show `[ROCKY]` (orange) at the bottom of Claude Code. After yo
 ## Uninstall
 
 ```bash
-npx -y github:Theralley/rocky -- --uninstall
+npx -y github:Theralley/rocky-skill -- --uninstall
 ```
 
 What it removes:
@@ -189,7 +189,7 @@ Open your agent in this repo and say:
 
 Agent read repo. Agent run install. Rocky make agent talk less — agent first job is install rocky to talk less. Snake eat tail.
 
-Still broken? [Open an issue](https://github.com/Theralley/rocky/issues).
+Still broken? [Open an issue](https://github.com/Theralley/rocky-skill/issues).
 
 **"I ran the installer but Claude Code isn't talking rocky."**
 
@@ -244,4 +244,4 @@ No telemetry. No analytics. The installer's own code makes no network calls. Net
 
 ---
 
-Stuck? Open an issue: <https://github.com/Theralley/rocky/issues>
+Stuck? Open an issue: <https://github.com/Theralley/rocky-skill/issues>

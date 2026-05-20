@@ -4,7 +4,7 @@
 # you'd pass to bin/install.js can be passed here; we just forward them.
 #
 # One-line install:
-#   irm https://raw.githubusercontent.com/Theralley/rocky/main/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.ps1 | iex
 #
 # Local clone:
 #   pwsh install.ps1 [flags]
@@ -21,7 +21,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$Repo = "Theralley/rocky"
+$Repo = "Theralley/rocky-skill"
 
 # Require Node ≥18.
 $node = Get-Command node -ErrorAction SilentlyContinue

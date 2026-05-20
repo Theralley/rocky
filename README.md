@@ -1,34 +1,50 @@
 <p align="center">
-  <img src="https://em-content.zobj.net/source/apple/391/rock_1faa8.png" width="120" />
+  <img src="docs/assets/rocky.jpg" width="320" alt="Rocky the Eridian"/>
 </p>
 
-<h1 align="center">rocky</h1>
+<h1 align="center">rocky-skill</h1>
 
 <p align="center">
-  <strong>Brain big. Words few. Good.</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Theralley/rocky/stargazers"><img src="https://img.shields.io/github/stars/Theralley/rocky?style=flat&color=yellow" alt="Stars"></a>
-  <a href="https://github.com/Theralley/rocky/commits/main"><img src="https://img.shields.io/github/last-commit/Theralley/rocky?style=flat" alt="Last Commit"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/Theralley/rocky?style=flat" alt="License"></a>
+  <strong>Make your coding agent talk like Rocky from <em>Project Hail Mary</em>.</strong><br>
+  <em>Brain big. Words few. Good.</em>
 </p>
 
 <p align="center">
-  <a href="#before--after">Before/After</a> •
+  <a href="https://github.com/Theralley/rocky-skill/stargazers"><img src="https://img.shields.io/github/stars/Theralley/rocky-skill?style=flat&color=yellow" alt="Stars"></a>
+  <a href="https://github.com/Theralley/rocky-skill/commits/main"><img src="https://img.shields.io/github/last-commit/Theralley/rocky-skill?style=flat" alt="Last Commit"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Theralley/rocky-skill?style=flat" alt="License"></a>
+</p>
+
+<p align="center">
   <a href="#install">Install</a> •
+  <a href="#before--after">Before/After</a> •
   <a href="#what-you-get">What You Get</a> •
   <a href="#benchmarks">Benchmarks</a> •
-  <a href="./INSTALL.md">Full install guide</a>
+  <a href="#about-rocky">About Rocky</a>
 </p>
 
 ---
 
-A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin (also Codex, Gemini, Cursor, Windsurf, Cline, Copilot, 30+ more) that makes the agent talk like Rocky the Eridian — cuts **~75% of output tokens**, keeps full technical accuracy. Brain big. Words few. Good.
+## TL;DR
 
-> *"Brain still works. Mouth uses fewer rocks. Question, you want this? Good. Install."*
->
-> — Rocky, probably
+A skill / plugin for Claude Code (and Codex, Gemini, Cursor, Windsurf, Cline, Copilot, 30+ more) that makes the agent answer in Rocky's voice — short declarative sentences, drops articles, ends questions with `, question?`, opens verdicts with `Is X.`, signs off with `Thank.`
+
+You save ~65–75% of output tokens. The brain is unchanged — only the mouth shrinks. It is genuinely a *nice-to-have*: install in 30 seconds, use for fun, keep it for the savings.
+
+## Install
+
+```bash
+# macOS / Linux / WSL / Git Bash
+curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.sh | bash
+
+# Windows (PowerShell 5.1+)
+irm https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.ps1 | iex
+```
+
+Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agent matrix in [INSTALL.md](./INSTALL.md).
+
+**Turn on:** type `/rocky` or say *"talk like rocky"*.
+**Turn off:** *"normal mode"* or *"stop rocky"*.
 
 ## Before / After
 
@@ -43,7 +59,7 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin (al
 </td>
 <td width="50%">
 
-### <img src="docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Rocky Claude (22 tokens)
+### <img src="docs/assets/rocky.jpg" width="24" height="24" alt="Rocky"/> Rocky Claude (22 tokens)
 
 > "Component re-render. New object ref each render. Wrap in `useMemo`. Good, good, good."
 
@@ -59,65 +75,59 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin (al
 </td>
 <td>
 
-### <img src="docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Rocky Claude
+### <img src="docs/assets/rocky.jpg" width="24" height="24" alt="Rocky"/> Rocky Claude
 
 > "Rocky see bug. Auth middleware. Token expiry use `<` not `<=`. Bad bad bad. Fix:"
 
 </td>
 </tr>
+<tr>
+<td>
+
+### 🗣️ Normal Claude
+
+> "Would you like me to use an index here, or would you prefer a cache layer? Both have trade-offs depending on your access patterns."
+
+</td>
+<td>
+
+### <img src="docs/assets/rocky.jpg" width="24" height="24" alt="Rocky"/> Rocky Claude
+
+> "Two paths. Index here, question? Or cache layer, question? Index faster, cache simpler."
+
+</td>
+</tr>
 </table>
 
-**Same fix. 75% fewer words. Brain big.**
-
-```
-┌─────────────────────────────────────┐
-│  TOKENS SAVED          ████████ 75% │
-│  TECHNICAL ACCURACY    ████████ 100%│
-│  SPEED INCREASE        ████████ ~3x │
-│  VIBES                 ████████ AMAZE│
-└─────────────────────────────────────┘
-```
-
-Pick your level of brevity — `lite` (drop filler), `full` (default Rocky), `ultra` (telegraphic), or `wenyan` (classical Chinese, even shorter). One command switches it. Cost goes down forever. Good.
-
-## Install
-
-One line. Finds every agent. Installs for each.
-
-```bash
-# macOS / Linux / WSL / Git Bash
-curl -fsSL https://raw.githubusercontent.com/Theralley/rocky/main/install.sh | bash
-
-# Windows (PowerShell 5.1+)
-irm https://raw.githubusercontent.com/Theralley/rocky/main/install.ps1 | iex
-```
-
-~30 seconds. Needs Node ≥18. Skips any agent you do not have. Safe to re-run.
-
-**Trigger:** type `/rocky` or say "talk like rocky". Stop with "normal mode".
-
-One agent only, manual command, or any of 30+ other agents → [**INSTALL.md**](./INSTALL.md).
-Install break? Open agent, say *"Read CLAUDE.md and INSTALL.md, install rocky for me."* Agent fixes own brain.
+**Same fix. Fewer words. Brain big.**
 
 ## What You Get
 
-| Skill | What |
+| Skill | What it does |
 |---|---|
 | `/rocky [lite\|full\|ultra\|wenyan]` | Compress every reply. Levels stick until session ends. |
-| `/rocky-commit` | Conventional Commit messages, ≤50 char subject. Why over what. |
+| `/rocky-commit` | Conventional Commit messages, ≤50 char subject. *Why* over *what*. |
 | `/rocky-review` | One-line PR comments: `L42: 🔴 bug: user null. Add guard.` |
-| `/rocky-stats` | Real session token usage + lifetime savings + USD. Tweetable line via `--share`. |
-| `/rocky-compress <file>` | Rewrite memory file (e.g. `CLAUDE.md`) into Rocky-speak. Cuts ~46% input tokens every session. Code/URLs/paths byte-preserved. |
-| `rocky-shrink` | MCP middleware. Wraps any MCP server, compresses tool descriptions. [npm](https://www.npmjs.com/package/rocky-shrink). |
-| `rockycrew-*` | Rocky subagents (investigator/builder/reviewer). ~60% fewer tokens than vanilla, main context lasts longer. |
+| `/rocky-stats` | Real session token usage + lifetime savings + USD. |
+| `/rocky-compress <file>` | Rewrite memory files (`CLAUDE.md`, notes) into Rocky-speak. Cuts ~46% of input tokens every session, every project. Code/URLs/paths preserved byte-for-byte. |
+| `rocky-shrink` | MCP middleware that wraps any MCP server and compresses tool descriptions. [npm](https://www.npmjs.com/package/rocky-shrink). |
+| `rockycrew-*` | Three Rocky subagents (investigator / builder / reviewer). ~60% fewer tokens than vanilla; your main context lasts longer. |
 
-**Statusline badge** — Claude Code shows `[ROCKY] 🪨 12.4k` (lifetime tokens saved). Updates every `/rocky-stats` run. Set `ROCKY_STATUSLINE_SAVINGS=0` to silence.
+**Statusline badge** — Claude Code shows `[ROCKY] 🪨 12.4k` (lifetime tokens saved). Disable with `ROCKY_STATUSLINE_SAVINGS=0`.
 
-Auto-activates every session: Claude Code, Codex, Gemini (built-in). Cursor / Windsurf / Cline / Copilot get always-on rule files via `--with-init`. Other agents trigger with `/rocky` per session. Full feature matrix in [INSTALL.md](./INSTALL.md#what-you-get).
+**Auto-activates every session:** Claude Code, Codex, Gemini. Cursor / Windsurf / Cline / Copilot get always-on rule files via `--with-init`. Everyone else triggers per-session with `/rocky`. Full matrix → [INSTALL.md](./INSTALL.md#what-you-get).
+
+## Why install this
+
+- **It is fun.** Reading a code review in Rocky's voice does not get old.
+- **Tokens are money.** ~65% off output across a 10-prompt benchmark, real Claude API runs (see below). Multiply by a year.
+- **Faster scanning.** Short sentences let you skim diffs and explanations in a fraction of the time.
+- **Zero lock-in.** One slash command to switch off. Skill files are plain markdown — read them, edit them, fork them.
+- **One install, every agent.** Claude Code, Codex, Gemini, Cursor, Windsurf, Cline, Copilot, opencode, OpenClaw, Replit, Devin, and 20+ more. The installer detects what you have and skips the rest.
 
 ## Benchmarks
 
-Real token counts from the Claude API. Average **65% output reduction** across 10 prompts (range 22-87%).
+Real token counts from the Claude API. Average **65% output reduction** across 10 prompts (range 22–87%).
 
 <!-- BENCHMARK-TABLE-START -->
 | Task | Normal | Rocky | Saved |
@@ -135,9 +145,9 @@ Real token counts from the Claude API. Average **65% output reduction** across 1
 | **Average** | **1214** | **294** | **65%** |
 <!-- BENCHMARK-TABLE-END -->
 
-Raw data and reproduction script: [`benchmarks/`](./benchmarks/). Three-arm eval harness (baseline / terse / skill) lives in [`evals/`](./evals/) — Rocky is compared against `Answer concisely.`, not the verbose default, so the delta is honest.
+Raw data and reproduction script: [`benchmarks/`](./benchmarks/). The three-arm eval harness in [`evals/`](./evals/) compares Rocky against `Answer concisely.`, not against the verbose default — so the delta is honest.
 
-**rocky-compress receipts** (real memory files):
+**rocky-compress receipts** (real memory files compressed in place):
 
 | File | Original | Compressed | Saved |
 |---|---:|---:|---:|
@@ -149,72 +159,66 @@ Raw data and reproduction script: [`benchmarks/`](./benchmarks/). Three-arm eval
 | **Average** | **898** | **481** | **46%** |
 
 > [!IMPORTANT]
-> Rocky only affects output tokens — thinking/reasoning tokens untouched. Rocky does not make the brain smaller. Rocky makes the *mouth* smaller. Biggest win is **readability and speed**, cost savings a bonus. Good.
+> Rocky only affects output tokens — thinking/reasoning tokens are untouched. Rocky does not make the brain smaller. Rocky makes the *mouth* smaller. The biggest practical win is **readability and speed**; cost savings are a bonus.
 
-A March 2026 paper ["Brevity Constraints Reverse Performance Hierarchies in Language Models"](https://arxiv.org/abs/2604.00025) found that constraining large models to brief responses **improved accuracy by 26 points** on certain benchmarks. Verbose is not always better. Sometimes fewer words = more correct. Amaze.
+## How It Works (30 seconds)
 
-## How It Works
-
-1. Install drops the skill file into the agent.
-2. Skill tells agent: drop filler, keep substance, use fragments, sound like Rocky.
-3. For Claude Code, hook also writes a tiny flag file each session — agent sees flag, talks Rocky from message one. No need to say `/rocky`.
-4. Stats command reads Claude Code session log, counts tokens saved, writes number to statusline.
-5. Rocky-compress sub-skill rewrites memory files (CLAUDE.md, project notes) so each session starts with smaller context. Saves tokens forever, not just one reply.
+1. The installer drops a skill file into each detected agent's config directory.
+2. The skill tells the agent to drop filler and keep substance.
+3. For Claude Code, a SessionStart hook writes a flag file so Rocky is active from message one — no need to type `/rocky` each session.
+4. `/rocky-stats` reads your Claude Code session log, counts tokens saved, and updates the statusline.
+5. `/rocky-compress` rewrites memory files (e.g. `CLAUDE.md`) so every session also starts with a smaller context. Tokens saved forever, not just one reply.
 
 Maintainer detail (hook architecture, file ownership, CI sync) lives in [CLAUDE.md](./CLAUDE.md).
 
-## Lobster, Meet Rock 🦞 <img src="docs/assets/dancing-rock.svg" width="22" height="22" alt="rock"/>
+## Lobster, Meet Rock 🦞
 
-[**OpenClaw**](https://openclaw.ai) is the self-host gateway. One box, many agents inside (Claude Code, Codex, Pi, OpenCode), wired to your Slack / Discord / iMessage / Telegram / whatever. Tagline: *"The lobster way."* Lobster strong. Lobster smart. Lobster also talks a lot.
-
-Rocky teaches the lobster brevity — same canonical installer, scoped to one agent:
+[**OpenClaw**](https://openclaw.ai) is a self-host gateway that runs several agents in one box (Claude Code, Codex, Pi, OpenCode), wired to your Slack / Discord / iMessage / Telegram. Rocky teaches it brevity:
 
 ```bash
-# macOS / Linux / WSL
-curl -fsSL https://raw.githubusercontent.com/Theralley/rocky/main/install.sh | bash -s -- --only openclaw
-
-# Windows (PowerShell): no Node? Install Node ≥18 first, then
-npx -y github:Theralley/rocky -- --only openclaw
+curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/install.sh | bash -s -- --only openclaw
 ```
 
-Two things happen, no more:
+Two writes, idempotent re-runs, marker-fenced (so uninstall is clean):
 
-1. **Skill drop** at `~/.openclaw/workspace/skills/rocky/SKILL.md` — spec-correct frontmatter (`version`, `always: true`), discoverable by `openclaw skills list`. Skill does not auto-inject (OpenClaw loads skills on demand) — that is why we also do step 2.
-2. **SOUL.md nudge.** Tiny marker-fenced block appended to `~/.openclaw/workspace/SOUL.md`. OpenClaw injects SOUL.md into *every* turn under "Project Context" (12K-per-file, 60K total — block well under). Lobster terse from message one. No `/rocky` per session. No nag.
+- `~/.openclaw/workspace/skills/rocky/SKILL.md` — the full ruleset, on-demand.
+- `~/.openclaw/workspace/SOUL.md` — small bootstrap block auto-injected every turn so Rocky is on from message one.
 
-```
-~/.openclaw/workspace/
-├── skills/rocky/SKILL.md      ← full ruleset, on-demand load
-└── SOUL.md                    ← <!-- rocky-begin --> ... <!-- rocky-end -->
-                                  ↑ auto-inject every turn
-```
+Override the path with `OPENCLAW_WORKSPACE=/your/path`. Uninstall: same one-liner with `--uninstall`.
 
-Custom workspace path? `OPENCLAW_WORKSPACE=/your/path` before the command. Uninstall: same one-liner with `--uninstall` — skill folder gone, SOUL.md block ripped out cleanly, your other workspace content stays untouched. Idempotent re-runs (frontmatter not double-prepended, marker block not duplicated).
+## About Rocky
 
-Lobster claw still sharp. Lobster mouth now small. Brain still big. Good.
+Rocky is the alien engineer character in Andy Weir's novel *Project Hail Mary*. In the book he is:
 
-## About the name
+- An **Eridian** — species from the planet Erid (named after a shared periodic-table element).
+- A **ship's engineer** — fixes and builds things; lone survivor of a 23-Eridian crew aboard the *Blip-A*.
+- Built around a **pentagonal carapace** with **five limbs radiating out**, each ending in claw-like hands.
+- Lives in an **ammonia atmosphere** at much higher pressure than humans.
+- Speaks in **musical chords**; the narrator builds a translation dictionary so the two can collaborate.
 
-Rocky is the alien engineer from Andy Weir's *Project Hail Mary*. He speaks in short, friendly, declarative sentences — drops articles, appends `, question?` to questions, opens verdicts with `Is X.`, triples words for urgency or surprise (`Bad bad bad.`, `Amaze, amaze, amaze.`), and signs off with `Thank.` Same energy fits perfectly when you want a coding agent to stop padding answers.
+His translated voice in the book is what this skill imitates: short subject-verb-object sentences, dropped articles, `, question?` appended to questions, `Is X.` openers for verdicts, occasional tripled emphasis (`Bad bad bad.`, `Good, good, good.`, `Amaze, amaze, amaze.`), and catchphrases like `Thank.` and `Fist my bump.` That speech pattern turns out to be a near-perfect fit for compressed coding output: friendly, technically precise, and almost zero filler.
 
-This project is a fork of [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — same installer architecture, same hook system, same compression skills. Voice reskinned from caveman-grunt to Rocky-Eridian. Different brand, same engine, full credit to the original. License unchanged (MIT).
+*Image: official Project Hail Mary plushie, used here as visual reference only.*
 
-There is also [Tom1827/claude-rocky-skill](https://github.com/Tom1827/claude-rocky-skill) — a minimal single-file Rocky skill for Claude Code if you want the voice without the full multi-agent installer. Tom's repo and this one solve different scopes; both credit the upstream caveman work.
+## Credits
+
+This project is a fork of [**JuliusBrussee/caveman**](https://github.com/JuliusBrussee/caveman) — same installer architecture, same hook system, same eval harness. The voice is reskinned from caveman-grunt to Rocky-Eridian. Full credit to Julius and the caveman contributors for the underlying engine. License unchanged (MIT).
+
+See also [**Tom1827/claude-rocky-skill**](https://github.com/Tom1827/claude-rocky-skill) — a minimal single-file Rocky skill for Claude Code if you want the voice without the full multi-agent installer.
 
 ## Links
 
-- [INSTALL.md](./INSTALL.md) — full install matrix, all flags, per-agent detail
-- [CONTRIBUTING.md](./CONTRIBUTING.md) — how to send patch
-- [CLAUDE.md](./CLAUDE.md) — maintainer guide (file ownership, hook architecture, CI)
-- [docs/](./docs/) — extra guides (Windows install, etc.)
-- [Issues](https://github.com/Theralley/rocky/issues) — bug, feature, weird behavior
+- [INSTALL.md](./INSTALL.md) — full install matrix, all flags, per-agent detail.
+- [CONTRIBUTING.md](./CONTRIBUTING.md) — how to send a patch.
+- [CLAUDE.md](./CLAUDE.md) — maintainer guide (file ownership, hook architecture, CI).
+- [Issues](https://github.com/Theralley/rocky-skill/issues) — bug, feature, weird behavior.
 
-## Star This Repo
+## Star this repo
 
-Rocky saves you tokens, saves you money. Star costs zero. Fair trade. Good. ⭐
+Rocky saves you tokens. Stars cost zero. Fair trade. ⭐
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Theralley/rocky&type=Date)](https://star-history.com/#Theralley/rocky&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Theralley/rocky-skill&type=Date)](https://star-history.com/#Theralley/rocky-skill&Date)
 
 ## License
 
-MIT — free like Eridian xenonite in open space.
+MIT.

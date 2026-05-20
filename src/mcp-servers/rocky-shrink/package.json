@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "MCP proxy that compresses prose fields (tool descriptions, etc.) using rocky rules. Same accuracy, fewer context tokens.",
   "license": "MIT",
-  "homepage": "https://github.com/Theralley/rocky",
+  "homepage": "https://github.com/Theralley/rocky-skill",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Theralley/rocky.git",
+    "url": "git+https://github.com/Theralley/rocky-skill.git",
     "directory": "src/mcp-servers/rocky-shrink"
   },
   "author": "Julius Brussee",

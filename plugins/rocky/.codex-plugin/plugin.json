@@ -6,8 +6,8 @@
     "name": "Julius Brussee",
     "url": "https://github.com/JuliusBrussee"
   },
-  "homepage": "https://github.com/Theralley/rocky",
-  "repository": "https://github.com/Theralley/rocky",
+  "homepage": "https://github.com/Theralley/rocky-skill",
+  "repository": "https://github.com/Theralley/rocky-skill",
   "license": "MIT",
   "keywords": [
     "productivity",
@@ -25,9 +25,9 @@
     "capabilities": [
       "Write"
     ],
-    "websiteURL": "https://github.com/Theralley/rocky",
-    "privacyPolicyURL": "https://github.com/Theralley/rocky/blob/main/README.md",
-    "termsOfServiceURL": "https://github.com/Theralley/rocky/blob/main/LICENSE",
+    "websiteURL": "https://github.com/Theralley/rocky-skill",
+    "privacyPolicyURL": "https://github.com/Theralley/rocky-skill/blob/main/README.md",
+    "termsOfServiceURL": "https://github.com/Theralley/rocky-skill/blob/main/LICENSE",
     "defaultPrompt": [
       "Use rocky mode. Cut filler. Keep technical accuracy."
     ],

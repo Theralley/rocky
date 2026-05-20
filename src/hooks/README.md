@@ -2,7 +2,7 @@
 
 These hooks are **bundled with the rocky plugin** and activate automatically when the plugin is installed. No manual setup required.
 
-If you installed rocky standalone (without the plugin), the unified Node installer at `bin/install.js` wires them into your `settings.json` for you — run `node bin/install.js --only claude` from a clone, or `npx -y github:Theralley/rocky -- --only claude` for the curl-pipe path.
+If you installed rocky standalone (without the plugin), the unified Node installer at `bin/install.js` wires them into your `settings.json` for you — run `node bin/install.js --only claude` from a clone, or `npx -y github:Theralley/rocky-skill -- --only claude` for the curl-pipe path.
 
 ## What's Included
 
@@ -100,7 +100,7 @@ If installed via plugin: disable the plugin — hooks deactivate automatically.
 
 If installed via the standalone Node installer:
 ```bash
-npx -y github:Theralley/rocky -- --uninstall
+npx -y github:Theralley/rocky-skill -- --uninstall
 # or, from a clone:
 node bin/install.js --uninstall
 ```

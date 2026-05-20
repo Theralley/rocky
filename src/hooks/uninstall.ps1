@@ -1,7 +1,7 @@
 # rocky — uninstaller for the SessionStart + UserPromptSubmit hooks (Windows PowerShell)
 # Removes: hook files in ~/.claude/hooks, settings.json entries, and the flag file
 # Usage: powershell -ExecutionPolicy Bypass -File src\hooks\uninstall.ps1
-#   or:  irm https://raw.githubusercontent.com/Theralley/rocky/main/src/hooks/uninstall.ps1 | iex
+#   or:  irm https://raw.githubusercontent.com/Theralley/rocky-skill/main/src/hooks/uninstall.ps1 | iex
 param()
 
 $ErrorActionPreference = "Stop"

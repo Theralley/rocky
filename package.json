@@ -1,16 +1,16 @@
 {
-  "name": "rocky-installer",
+  "name": "rocky-skill-installer",
   "version": "0.1.0",
-  "description": "Rocky installer — detects your AI coding agents and installs Rocky (Eridian-style compressed communication) for each one. Fork of caveman by Julius Brussee.",
+  "description": "Rocky skill — make your AI coding agent talk like Rocky the Eridian from Project Hail Mary. Cuts ~75% of output tokens while keeping full technical accuracy. Installs across Claude Code, Codex, Gemini, Cursor, and 30+ more agents. Fork of caveman by Julius Brussee.",
   "license": "MIT",
   "author": "Theralley",
-  "homepage": "https://github.com/Theralley/rocky",
+  "homepage": "https://github.com/Theralley/rocky-skill",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Theralley/rocky.git"
+    "url": "git+https://github.com/Theralley/rocky-skill.git"
   },
   "bugs": {
-    "url": "https://github.com/Theralley/rocky/issues"
+    "url": "https://github.com/Theralley/rocky-skill/issues"
   },
   "bin": {
     "rocky": "./bin/install.js"

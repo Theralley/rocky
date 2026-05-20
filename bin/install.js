@@ -8,7 +8,7 @@
 //
 // Distribution:
 //   Local clone: node bin/install.js [flags]
-//   curl|bash:   delegated from install.sh shim → npx -y github:Theralley/rocky -- [flags]
+//   curl|bash:   delegated from install.sh shim → npx -y github:Theralley/rocky-skill -- [flags]
 //   Windows:     pwsh install.ps1 [flags] → same npx delegation
 //
 // Pure stdlib, zero npm runtime deps.
@@ -24,7 +24,7 @@ const readline = require('readline');
 const SETTINGS = require('./lib/settings');
 const OPENCLAW = require('./lib/openclaw');
 
-const REPO = 'Theralley/rocky';
+const REPO = 'Theralley/rocky-skill';
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main`;
 const HOOKS_REMOTE = `${RAW_BASE}/src/hooks`;
 const INIT_SCRIPT_URL = `${RAW_BASE}/src/tools/rocky-init.js`;
@@ -1066,7 +1066,7 @@ function printHelp() {
   process.stdout.write(`rocky installer — detects your agents and installs rocky for each one.
 
 USAGE
-  npx -y github:Theralley/rocky -- [flags]
+  npx -y github:Theralley/rocky-skill -- [flags]
   node bin/install.js [flags]
   bash install.sh [flags]              # shim → npx
   pwsh install.ps1 [flags]             # shim → npx
@@ -1097,10 +1097,10 @@ FLAGS
   -h, --help            Show this help.
 
 EXAMPLES
-  npx -y github:Theralley/rocky                        # default install
-  npx -y github:Theralley/rocky -- --all               # all the trimmings
-  npx -y github:Theralley/rocky -- --only claude --no-mcp-shrink
-  npx -y github:Theralley/rocky -- --uninstall
+  npx -y github:Theralley/rocky-skill                        # default install
+  npx -y github:Theralley/rocky-skill -- --all               # all the trimmings
+  npx -y github:Theralley/rocky-skill -- --only claude --no-mcp-shrink
+  npx -y github:Theralley/rocky-skill -- --uninstall
 
   Issues: https://github.com/${REPO}/issues
 `);
