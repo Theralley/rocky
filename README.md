@@ -131,12 +131,13 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 
 ## Benchmarks
 
-> **Note:** the table below is inherited from the upstream caveman benchmark suite, which measures *pure compression* — no catchphrases, no tripled emphasis, no `User and Rocky, big science!`. Rocky's voice deliberately spends some of that savings back on personality, so on real Rocky sessions expect a smaller (but still real) reduction. We have not re-measured the Rocky-specific delta yet; treat these numbers as the upper bound of what the underlying compression engine can do, not as a promise of Rocky's output.
+> [!IMPORTANT]
+> **The numbers below are from upstream caveman, not Rocky.** They measure the *underlying compression engine* (no catchphrases, no tripled emphasis, no `User and Rocky, big science!`). Rocky's voice deliberately spends some of that savings back on personality, so real Rocky sessions land below these numbers. We have not re-measured the Rocky-specific delta yet — these are the engine's upper bound, not a promise.
 
-Real token counts from the Claude API. Average **65% output reduction** across 10 prompts (range 22–87%).
+Real token counts from the Claude API. Average **65% output reduction** across 10 prompts (range 22–87%) — **measured against the caveman skill.**
 
 <!-- BENCHMARK-TABLE-START -->
-| Task | Normal | Rocky | Saved |
+| Task | Normal | Caveman | Saved |
 |------|-------:|--------:|------:|
 | Explain React re-render bug | 1180 | 159 | 87% |
 | Fix auth middleware token expiry | 704 | 121 | 83% |
@@ -151,9 +152,9 @@ Real token counts from the Claude API. Average **65% output reduction** across 1
 | **Average** | **1214** | **294** | **65%** |
 <!-- BENCHMARK-TABLE-END -->
 
-Raw data and reproduction script: [`benchmarks/`](./benchmarks/). The three-arm eval harness in [`evals/`](./evals/) compares Rocky against `Answer concisely.`, not against the verbose default — so the delta is honest.
+Raw data and reproduction script: [`benchmarks/`](./benchmarks/). The three-arm eval harness in [`evals/`](./evals/) compares the skill against `Answer concisely.`, not against the verbose default — so the delta is honest.
 
-**rocky-compress receipts** (real memory files compressed in place):
+**rocky-compress receipts** (real memory files compressed in place) — same engine as caveman-compress, so these numbers carry over directly:
 
 | File | Original | Compressed | Saved |
 |---|---:|---:|---:|
@@ -163,6 +164,8 @@ Raw data and reproduction script: [`benchmarks/`](./benchmarks/). The three-arm 
 | `todo-list.md` | 627 | 388 | **38.1%** |
 | `mixed-with-code.md` | 888 | 560 | **36.9%** |
 | **Average** | **898** | **481** | **46%** |
+
+> **Rocky's take.** *"Rocky saves token. Amaze, amaze, amaze. But Rocky too new for own data — must run real benchmark first. User and Rocky, big science, question?"*
 
 > [!IMPORTANT]
 > Rocky only affects output tokens — thinking/reasoning tokens are untouched. Rocky does not make the brain smaller. Rocky makes the *mouth* smaller. The biggest practical win is **readability and speed**; cost savings are a bonus.
