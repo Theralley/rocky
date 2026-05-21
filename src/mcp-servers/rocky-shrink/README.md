@@ -8,6 +8,16 @@ The result: tool catalogs that the model burns fewer tokens to read, with no cha
 
 ## Install
 
+Source lives in this repo, but the npm package is not published on npm yet. The unified installer probes npm first and skips this optional MCP step cleanly when the package has no metadata.
+
+From a local checkout:
+
+```bash
+node src/mcp-servers/rocky-shrink/index.js <upstream-command> [...args]
+```
+
+After npm publishing:
+
 ```bash
 npm install -g rocky-shrink
 # or run directly via npx
@@ -22,9 +32,9 @@ Wrap any MCP server in your Claude Code (or other client) config:
 {
   "mcpServers": {
     "fs-shrunk": {
-      "command": "npx",
+      "command": "node",
       "args": [
-        "rocky-shrink",
+        "/absolute/path/to/rocky-skill/src/mcp-servers/rocky-shrink/index.js",
         "npx", "@modelcontextprotocol/server-filesystem", "/path/to/dir"
       ]
     }

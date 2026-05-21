@@ -23,6 +23,7 @@
   <a href="#install">Install</a> •
   <a href="#before--after">Before/After</a> •
   <a href="#what-you-get">What You Get</a> •
+  <a href="#rocky-flavor">Flavor</a> •
   <a href="#benchmarks">Benchmarks</a> •
   <a href="#about-rocky">About Rocky</a>
 </p>
@@ -114,12 +115,26 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 | `/rocky-review` | One-line PR comments: `L42: 🔴 bug: user null. Add guard.` |
 | `/rocky-stats` | Real session token usage + lifetime savings + USD. |
 | `/rocky-compress <file>` | Rewrite memory files (`CLAUDE.md`, notes) into Rocky-speak. Cuts ~46% of input tokens every session, every project. Code/URLs/paths preserved byte-for-byte. |
-| `rocky-shrink` | MCP middleware that wraps any MCP server and compresses tool descriptions. [npm](https://www.npmjs.com/package/rocky-shrink). |
+| `rocky-shrink` | MCP middleware that wraps any MCP server and compresses tool descriptions. Source ships in [`src/mcp-servers/rocky-shrink`](./src/mcp-servers/rocky-shrink/); npm package is not published on npm yet, so the installer skips this optional step cleanly when npm has no metadata. |
 | `rockycrew-*` | Three Rocky subagents (investigator / builder / reviewer). ~60% fewer tokens than vanilla; your main context lasts longer. |
 
 **Statusline badge** — Claude Code shows `[ROCKY] 🪨 12.4k` (lifetime tokens saved). Disable with `ROCKY_STATUSLINE_SAVINGS=0`.
 
 **Auto-activates every session:** Claude Code, Codex, Gemini. Cursor / Windsurf / Cline / Copilot get always-on rule files via `--with-init`. Everyone else triggers per-session with `/rocky`. Full matrix → [INSTALL.md](./INSTALL.md#what-you-get).
+
+## Rocky Flavor
+
+Rocky is not "short assistant with a gimmick." He is a hot-ammonia engineer with a workshop brain, a sleep-watch culture, and extremely literal social instincts. The skill leans into that:
+
+| Moment | Rocky line |
+|---|---|
+| Work needs shape | `Need plan.` |
+| Fragile file / release artifact | `Careful. Collector important.` |
+| Incident mode | `First, no crash. Then, not explode.` |
+| Real win | `Thumbs up, baby.` |
+| Decision can wait | `Think about it long time.` |
+
+The result is terse, but not sterile. Code reviews get sharper. Long Codex or Claude Code sessions get easier to scan. And every so often the alien engineer says exactly the wrong-right thing.
 
 ## Why install this
 
@@ -129,6 +144,18 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 - **Some token savings (less than pure-compression skills).** You still pay fewer output tokens than a verbose default, but Rocky's catchphrases and tripled emphasis spend back a portion of what pure-compression caveman saves. See the benchmark note below.
 - **Zero lock-in.** One slash command to switch off. Skill files are plain markdown — read them, edit them, fork them.
 - **One install, every agent.** Claude Code, Codex, Gemini, Cursor, Windsurf, Cline, Copilot, opencode, OpenClaw, Replit, Devin, and 20+ more. The installer detects what you have and skips the rest.
+
+## Token-Saving Stack
+
+Use Rocky in layers:
+
+- `/rocky full` for normal work: shorter replies, enough personality.
+- `/rocky ultra` for long debugging, logs, test output, and repeated status updates.
+- `/rocky-compress <file>` for memory files like `CLAUDE.md`, `AGENTS.md`, and project notes.
+- `rocky-shrink` for MCP tool descriptions before they enter context. Optional today: source is in this repo, but the npm package is not published on npm yet.
+- `rockycrew-*` when subagents are useful but their returned context would otherwise be noisy.
+
+Also ask for bullets, tables, or file:line findings when you need output you can scan fast. Rocky saves most when you make the desired shape explicit.
 
 ## Benchmarks
 
