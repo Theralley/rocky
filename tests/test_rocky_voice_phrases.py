@@ -101,6 +101,23 @@ class TestRockyVoicePhrases(unittest.TestCase):
             self.assertIn(snippet, fallback)
             self.assertIn(snippet, init_fallback)
 
+    def test_readme_ends_with_rocky_comments(self):
+        readme = read("README.md")
+
+        for snippet in [
+            "## Rocky's README Notes",
+            "Repo is small ship.",
+            "README too long, question?",
+            "Stars cost zero.",
+            "Install easy. Uninstall easy. Friendship optional but recommended.",
+        ]:
+            self.assertIn(snippet, readme)
+
+        self.assertGreater(
+            readme.rfind("## Rocky's README Notes"),
+            readme.rfind("## License"),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -262,3 +262,15 @@ Rocky saves you tokens. Stars cost zero. Fair trade. ⭐
 ## License
 
 MIT.
+
+## Rocky's README Notes
+
+> Repo is small ship. Many agents fit inside. Is good.
+>
+> README too long, question? Yes. But install matrix important. Human read once, agent read fast.
+>
+> If bug found, make issue. Rocky bring wrench. Maybe two wrench.
+>
+> Stars cost zero. Rocky accepts.
+
+Install easy. Uninstall easy. Friendship optional but recommended.
