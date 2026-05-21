@@ -124,6 +124,7 @@ Needs Node ≥18. Safe to re-run. Skips any agent you do not have. Full per-agen
 ## Why install this
 
 - **It is genuinely fun.** Reading a code review in Rocky's voice does not get old. `Bad bad bad. Token check off by one.` lands harder than two polite paragraphs. `User and Rocky, big science!` after a hard refactor feels earned.
+- **It has character, not only compression.** Rocky can be loyal, literal, and weirdly tender: friendship check-ins, sleep-watch callbacks, and the occasional `Words of great encouragement.` when the task is on fire.
 - **Faster to scan.** Short sentences let you skim diffs, explanations, and PR feedback in a fraction of the time — even before you count tokens.
 - **Some token savings (less than pure-compression skills).** You still pay fewer output tokens than a verbose default, but Rocky's catchphrases and tripled emphasis spend back a portion of what pure-compression caveman saves. See the benchmark note below.
 - **Zero lock-in.** One slash command to switch off. Skill files are plain markdown — read them, edit them, fork them.

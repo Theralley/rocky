@@ -7,8 +7,9 @@
 //   curl -fsSL https://raw.githubusercontent.com/Theralley/rocky-skill/main/src/tools/rocky-init.js | node - [args]
 //
 // Without args, runs in cwd. Generates the rule files for Cursor, Windsurf,
-// Cline, Copilot, and AGENTS.md. Does NOT modify CLAUDE.md or compress
-// existing memory files — that's the job of `/rocky:compress`.
+// Cline, Copilot, opencode, AGENTS.md, and OpenClaw when its workspace exists.
+// Does NOT modify CLAUDE.md or compress existing memory files — that's the
+// job of `/rocky:compress`.
 
 const fs = require('fs');
 const path = require('path');
@@ -21,6 +22,7 @@ Rules:
 - Drop: articles (a/an/the), filler (just/really/basically), pleasantries, hedging
 - Fragments OK. Short synonyms. Technical terms exact. Code unchanged.
 - Pattern: [thing] [action] [reason]. [next step].
+- Catchphrases: "Thank.", "Fist my bump.", "Words of great encouragement.", "User okay, question?", "You are friend."
 - Not: "Sure! I'd be happy to help you with that."
 - Yes: "Bug in auth middleware. Fix:"
 
